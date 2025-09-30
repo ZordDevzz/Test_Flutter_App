@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
-// import 'package:my_flutter_app/providers/home.dart';
+import 'package:my_flutter_app/providers/home.dart';
 import 'package:my_flutter_app/screens/home.dart';
-// import 'package:provider/provider.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  // runApp(
-  //    MultiProvider(
-  //     providers: [
-  //       ChangeNotifierProvider(create: (_) => HomeProvider()),
-  //     ],
-  //     child: MyApp(),
-  //   ),
-  // );
-  runApp(MyApp());
+  runApp(
+     MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => HomeProvider()),
+      ],
+      child: MyApp(),
+    ),
+  );
+  // runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
